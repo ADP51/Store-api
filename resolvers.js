@@ -1,5 +1,8 @@
 const db = require("./db");
+
 process.setMaxListeners(Infinity);
+
+
 const Query = {
   store: (root, args) => db.stores.get(args.id),
   stores: () => db.stores.list(),
@@ -11,6 +14,7 @@ const Query = {
   lineitems: () => db.lineitems.list()
 };
 
+//if this was a real api we should probably use some sort of body validation
 const Mutation = {
   // crud for Store
   createStore: (root, {name}) => {

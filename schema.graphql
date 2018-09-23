@@ -14,13 +14,13 @@ type Mutation {
   updateStore(name: String, id: ID): Store
   deleteStore(id: ID): ID
   createProduct(input: CreateProductInput): Product
-  updateProduct(input: CreateProductInput): Product
+  updateProduct(input: UpdateProductInput): Product
   deleteProduct(id: ID): Product
   createOrder(input: CreateOrderInput): Order
-  updateOrder(input: CreateOrderInput): Order
+  updateOrder(input: UpdateOrderInput): Order
   deleteOrder(id: ID): Order
   createLineitem(input: LineitemInput): Lineitem
-  updateLineitem(input: LineitemInput): Lineitem
+  updateLineitem(input: UpdateLineitemInput): Lineitem
   deleteLineitem(id: ID): Lineitem
 }
 
@@ -66,13 +66,28 @@ input CreateProductInput {
   storeId: ID
 }
 
+input UpdateProductInput {
+  name: String
+  description: String
+  price: Float
+}
+
 input CreateOrderInput {
   total: Float
   storeId: ID
+}
+
+input UpdateOrderInput {
+  total: Float
 }
 
 input LineitemInput {
   quantity: Int
   productId: ID
   storeId: ID
+}
+
+input UpdateLineitemInput {
+  quantity: Int
+  productId: ID
 }

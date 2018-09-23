@@ -6,7 +6,7 @@ const cors = require('cors');
 const fs = require("fs");
 const db = require("./db");
 const app = express();
-const port = 9000;
+const port = process.env.PORT || 8080;
 
 const typeDefs = fs.readFileSync('./schema.graphql', {encoding: 'utf-8'});
 const resolvers = require("./resolvers");
