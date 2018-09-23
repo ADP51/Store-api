@@ -12,7 +12,8 @@ const typeDefs = fs.readFileSync('./schema.graphql', {encoding: 'utf-8'});
 const resolvers = require("./resolvers");
 
 app.use(cors(), bodyParser.json());
-const graphqlServer = new ApolloServer({typeDefs, resolvers});
+const graphqlServer = new ApolloServer({typeDefs, resolvers, introspection: true,
+  playground: true});
 graphqlServer.applyMiddleware({app});
 
 
