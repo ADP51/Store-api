@@ -1,0 +1,85 @@
+[
+  {
+    "id": "1",
+    "name": "iPad 4 Mini",
+    "price": 500.01,
+    "storeId": "1"
+  },
+  {
+    "id": "2",
+    "name": "H&M T-Shirt White",
+    "price": 10.99,
+    "storeId": "1"
+  },
+  {
+    "id": "3",
+    "name": "Charli XCX - Sucker CD",
+    "price": 19.99,
+    "storeId": "2"
+  },
+  {
+    "id": "4",
+    "name": "AMD Ryzen 2700x",
+    "description": "AMD's Ryzen1700X delivers incredible multi-threading and multi-tasking performance with 8 processor cores and 16 threads thanks to SMT Multithreading. Featuring true machine intelligence via AMD SenseMI technology, you can push the limits even further with Extended Frequency Range (XFR) to lift the maximum boost frequency in the presence of better cooling. REQUIRES A CPU COOLER AND DISCRETE GRAPHICS CARD, NOT INCLUDED.",
+    "price": 309.99,
+    "storeId": "1"
+  },
+  {
+    "id": "5",
+    "name": "EVGA GeForce GTX 1060 GAMING, ACX 2.0 (Single Fan), 6GB GDDR5, DX12 OSD Support (PXOC), Only 6.8 Inches Graphics Card 06G-P4-6161-KR",
+    "description": "The EVGA GeForce GTX 1060 is loaded with innovative new gaming technologies, making it the perfect choice for the latest high-definition games. Powered by NVIDIA Pascal - the most advanced GPU architecture ever created - the GeForce GTX 1060 delivers brilliant performance that opens the door to virtual reality and beyond.",
+    "price": 364.99,
+    "storeId": "1"
+  },
+  {
+    "id": "6",
+    "name": "ASUS ROG Strix Z370-E Gaming LGA1151 DDR4 DP HDMI DVI M.2 Z370 ATX Motherboard with onboard 802.11ac WiFi and USB 3.1 for 8th Generation Intel Core Processors",
+    "description": "Experience next-level gaming performance and personalization with the ROG STRIX Z370-E GAMING, exclusively for 8th generation Intel Core processors. Unlock full calibration and customization with 5-Way Optimization, AURA Sync RGB lighting, addressable RGB headers and 3D-printing mounts. Dual M.2, 802.11ac Wi-Fi and front panel USB 3.1 deliver maximum connectivity speeds.",
+    "price": 262.49,
+    "storeId": "1"
+  },
+  {
+    "id": "7",
+    "name": "Futura 34 EL Backpack",
+    "description": "With an elongated spring steel frame behind our newly innovated mesh backsystem the Futura 34 EL is the perfect choice for hikers over 6 feet tall. With all the amenities of our shorter Futura models this pack adds the extra inches so you can go the extra miles with comfort and ease.",
+    "price": 239.49,
+    "storeId": "2"
+  },
+  {
+    "id": "8",
+    "name": "CANVAS EQUIPEMENT BAGS 42",
+    "description": "Canvas Bag (Medium)",
+    "price": 34.99,
+    "storeId": "2"
+  },
+  {
+    "id": "9",
+    "name": "VIBE 80 Stand-Up Paddleboard - 8 ft",
+    "description": "The Pelican VIBE 80 is a highly functional stand-up paddle board simply scaled down in size to suit smaller paddlers. This SUP features anti-slip textured surface, a flexible removable fin, a molded carrying handle for easy transport, a bottle holder and drain plug. Its unique concave standing surface enables recovery if the board tilts. Made of RAM-X™S impact-resistant material, the VIBE 80 is built to last for many fun-filled days on the water. It comes equipped with a junior paddle. See you on the water!",
+    "price": 299.99,
+    "storeId": "2"
+  },
+  {
+    "id": "10",
+    "name": "AZZA CSAZ-211 Black ATX Mid Tower Computer Case, Gamdias GD-AstrapeM1-650W 650W ATX12V v2.2 80 PLUS Standard Certified Active PFC Power Supply with Neon RGB & 26 Lighting Effects",
+    "description": "ATX Tower Case",
+    "price": 109.99,
+    "storeId": "3"
+  },
+  {
+    "id": "S1sWs0bKm",
+    "name": "Thing",
+    "description": "Test",
+    "price": 89.9,
+    "storeId": "HkYIKRbt7"
+  },
+  {
+    "id": "H17nCAWKQ",
+    "input": {
+      "name": "Test2",
+      "description": "Testing123",
+      "price": 20,
+      "storeId": "2"
+    }
+  }
+]

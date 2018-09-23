@@ -1,0 +1,78 @@
+type Query {
+  store(id: ID!): Store
+  stores: [Store]
+  product(id: ID!): Product
+  products: [Product]
+  order(id: ID!): Order
+  orders: [Order]
+  lineitem(id: ID!): Lineitem
+  lineitems: [Lineitem]
+}
+
+type Mutation {
+  createStore(name: String): ID
+  updateStore(name: String, id: ID): Store
+  deleteStore(id: ID): ID
+  createProduct(input: CreateProductInput): Product
+  updateProduct(input: CreateProductInput): Product
+  deleteProduct(id: ID): Product
+  createOrder(input: CreateOrderInput): Order
+  updateOrder(input: CreateOrderInput): Order
+  deleteOrder(id: ID): Order
+  createLineitem(input: LineitemInput): Lineitem
+  updateLineitem(input: LineitemInput): Lineitem
+  deleteLineitem(id: ID): Lineitem
+}
+
+
+type Store {
+  id: ID!
+  name: String!
+  products: [Product]
+  orders: [Order]
+}
+
+type Product {
+  id: ID!
+  name: String!
+  description: String
+  price: Float!
+  store: Store!
+  lineitems: [Lineitem]
+}
+
+type Order {
+  id: ID!
+  total: Float!
+  store: Store!
+  lineitems: [Lineitem]
+}
+
+type Lineitem {
+  id: ID!
+  quantity: Int!
+  product: Product!
+  order: Order!
+}
+
+input CreateStoreInput {
+  name: String
+}
+
+input CreateProductInput {
+  name: String
+  description: String
+  price: Float
+  storeId: ID
+}
+
+input CreateOrderInput {
+  total: Float
+  storeId: ID
+}
+
+input LineitemInput {
+  quantity: Int
+  productId: ID
+  storeId: ID
+}
