@@ -15,6 +15,7 @@ const Query = {
 };
 
 //if this was a real api we should probably use some sort of body validation
+//also this api is assuming that order total calculations are done on the front end
 const Mutation = {
   // crud for Store
   createStore: (root, {name}) => {
