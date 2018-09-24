@@ -1,3 +1,5 @@
+//this api is deployed at https://frozen-oasis-78914.herokuapp.com/graphql
+//the github repo for this app is located at https://github.com/ADP51/Store-api
 const { ApolloServer, gql } = require('apollo-server-express');
 const express = require('express');
 const bodyParser = require('body-parser');
